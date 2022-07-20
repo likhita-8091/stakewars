@@ -403,8 +403,8 @@ NEAR_ENV=shardnet near call jiangwei.factory.shardnet.near ping '{}' --accountId
 #### cron job
 ```bash
 ubuntu@ip-172-26-8-107:~$ crontab -e
-# auto Ping once every 60 minutes
-*/60  * * * * nohup ~/near_ping.sh >> ~/near_ping.log 2>&1 &
+# auto Ping once every 5 minutes
+*/5  * * * * nohup ~/near_ping.sh >> ~/near_ping.log 2>&1 &
 ```
 ## 004
 Becoming a verifier is not immediately visible. After creating a take pool, the status should be proposal and being added:
